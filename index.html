@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tesla</title>
+</head>
+<body>
+    <div class ="header" id ="header">
+        <nav>
+            <img src="Imgs/7e7a15b104b804716299cc13358034ab-cartola-de-terno-masculino-duotone-anos-20.webp" alt="imagem logo" class="logo">
+            <ul>
+                <li><a href="#" id="models">Ternos</a></li>
+                <li><a href="#" id="model3">Coletes</a></li>
+                <li><a href="#" id="modelx">Calças</a></li>
+                <li><a href="#" id="modely">Acessórios</a></li>
+            </ul>
+            <a href="#" class ="btn">Reserve Agora</a>
+        </nav>
+        <div class ="info">
+            <div>
+                <h2 id="seg">Casuais</h2>
+                <p>Tipo casual é leve e descontraído.</p>
+            </div>
+            <div>
+                <h2 id="mph">Formais</h2>
+                <p>Tipo formal é sofisticado e ajustado.</p>
+            </div>
+            <div>
+                <h2 id="mi">Sociais</h2>
+                <p>Tipo social é clássico e elegante.</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id ="model">Modelos</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let ms = document.getElementById('models')
+    let m3 = document.getElementById('model3')
+    let mx = document.getElementById('modelx')
+    let my = document.getElementById('modely')
+    let model = document.getElementById('model')
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let mi = document.getElementById('mi')
+
+    ms.onclick = function(){
+    header.style.backgroundImage = "url(Imgs/terno_costume_slim_apa_preto_new_uomo_5511_1_895d334e66c171e76f726d4c1c6e0fd0.webp)"
+    model.innerHTML = "Ternos"
+    seg.innerHTML = "Casuais"
+    mph.innerHTML = "Formais"
+    mi.innerHTML = "Sociais"
+    }
+    m3.onclick = function(){
+    header.style.backgroundImage = "url(Imgs/17152504908d1888c4e04db3b49f02eff7688b16b9_thumbnail_720x.jpg)"
+    model.innerHTML = "Coletes"
+    seg.innerHTML = "Casuais"
+    mph.innerHTML = "Formais"
+    mi.innerHTML = "Sociais"
+    }
+    mx.onclick = function(){
+    header.style.backgroundImage = "url(Imgs/calca_raffer_alfaiataria_ajuste_lateral_azul_marinho_12121_1_31ac8432ad1223de2b8b93911f3b711a.webp)"
+    model.innerHTML = "Calças"
+    seg.innerHTML = "Casuais"
+    mph.innerHTML = "Formais"
+    mi.innerHTML = "Sociais"
+    }
+    my.onclick = function(){
+    header.style.backgroundImage = "url(Imgs/2021-01-12-10-57-18.jpg)"
+    model.innerHTML = "Acessórios"
+    seg.innerHTML = "Casuais"
+    mph.innerHTML = "Formais"
+    mi.innerHTML = "Sociais"
+    }
+
+</script>
+</html>
